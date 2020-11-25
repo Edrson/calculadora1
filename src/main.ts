@@ -55,7 +55,7 @@ function operar(a,b,f) {
 }
 
 //utilización del callback, en asignación a una variable
-let v1 : number ;
+let v1 ;
 //a la función operar se le envían los números de parámetro y la función a ejecutar, (v1 toma el valor de 10)
 v1 = operar(2,8,sum);
 console.log(v1);
@@ -72,7 +72,7 @@ function  tssuma(a:number,b:number):number{
 
 //funcion operar2 quien recibe de parametro dos números(a,b), una funcion(f) con sus parametros (c,d)
 //esta funcion(f) returna un valor number, y operar2  devuelve el return de (f), osea number
-function operar2(a:number,b:number,f:(c:number,d:number)=>number):number {
+function operar2(a:number,b:number,f:(c:number,d:number)=>number) : number {
     return f(a,b);
 }
 
