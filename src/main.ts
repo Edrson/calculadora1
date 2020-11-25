@@ -14,7 +14,7 @@ rl.question('Ingresa signo de operacion: ', (answer) => {
     //rl.close();
 });
 */
-import {suma, resta, multiplicar} from "./operaciones";
+import {suma, resta, multiplicar,division} from "./operaciones";
 
 console.log('********** Probando suma ***********');
 let respuestaSuma : number;
@@ -34,4 +34,8 @@ respuestaMult= multiplicar(80,7);
 console.log('El producto es: ' +respuestaMult);
 console.log('********** Fin Multiplicacion ***********');
 
-
+console.log('********** Probando division ***********');
+let respuestaDiv : number;
+respuestaDiv = division(40,7);
+console.log('El resultado de la division es: '+respuestaDiv.toFixed(2));
+console.log('********** Fin división***********');
