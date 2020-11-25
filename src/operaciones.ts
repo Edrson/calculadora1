@@ -13,3 +13,4 @@ export  function  multiplicar(a:number,b:number){
 export function  division(a:number,b:number) :number {
     return a/b;
 }
+
