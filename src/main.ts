@@ -14,11 +14,12 @@ rl.question('Ingresa signo de operacion: ', (answer) => {
     //rl.close();
 });
 */
+
 import {suma, resta, multiplicar,division} from "./operaciones";
 
 console.log('********** Probando suma ***********');
 let respuestaSuma : number;
-respuestaSuma = suma(5,8);
+respuestaSuma = suma(400,75);
 console.log('La suma es: ' +respuestaSuma);
 console.log('********** Fin suma ***********');
 
