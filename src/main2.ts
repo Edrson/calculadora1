@@ -1,4 +1,5 @@
 import {INeumatico} from "./ginterfaces";
+import {Articulo} from "./Gclases";
 
 console.log('############## TRABAJANDO CON INTERFACES #####################')
 interface IMedioTransporte{
@@ -53,4 +54,31 @@ class Lancha implements  IMedioTransporte{
 //Instanciar lancha y ver el funcionamiento.
 let miLancha  = new Lancha('blanco','lap');
 miLancha.IArrancar();
+
+//Herencia
+class  Lapiz extends Articulo{
+    conBorrador: boolean;
+    public constructor(conBorrador:boolean,origen) {
+        super(origen);
+    }
+
+}
+
+let miLapiz = new Lapiz(true,'Desconocido');
+miLapiz.mostrarDatos();
+miLapiz.escribir();
+
+class  Lapicero extends Articulo{
+
+    public constructor(origen) {
+        super(origen);
+    }
+
+}
+
+let miLapicero = new Lapicero('De dudosa procedencia');
+miLapicero.mostrarDatos();
+miLapicero.escribir();
+
+
 
